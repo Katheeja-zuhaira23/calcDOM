@@ -1,22 +1,99 @@
-#calculator {
-    width: 300px;
-    margin: 0 auto;
+#buttons{
+  display: grid;
+  background-color: rgb(234, 244, 244);
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+  margin: 500px;
+  margin-top:50px;
+  padding: 10px;
+  }
+  
+  button{
+      text-align: center;
+      font-size: xx-large;
+      border: 1px solid black;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: inset 5px seagreen;
+      color:black;
+      background-color:gainsboro;
+  }
+
+
+  #result{
     text-align: center;
+      font-size: xx-large;
+      border: 1px solid black;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: inset 5px seagreen;
+      color:black;
+      background-color:gainsboro;
   }
-
-  #result {
-    font-size: 24px;
-    margin: 10px 0;
+  
+  
+  #result{
+      grid-column-start: 1;
+      grid-column-end: 5;
+      text-align: right;
+      
   }
-
-  #buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+  
+  .grid-11{
+  color: red;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
   }
-
-  button {
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
+  .grid-18{
+      background-color:green;
+      color: white;
+      grid-column-start: 4;
+      grid-row-end: 7;
+  }
+  .grid-17{
+      grid-column-start: 4;
+      grid-row-end: 6;
+      background-color: green;
+      color:white;
+  }
+  .grid-16{
+      grid-column-start: 4;
+      grid-row-end: 5;
+      background-color: green;
+      color:white;
+  }
+  .grid-15{
+      grid-column-start: 4;
+      grid-row-end: 4;
+      background-color: green;
+      color:white;
+  }
+  .grid-14{
+      grid-column-start: 4;
+      grid-row-end: 3;
+      background-color: green;
+      color:white;
+  }
+  .grid-13{
+      grid-column-start: 3;
+      grid-row-end: 3;
+      background-color: green;
+      color:white;
+  }
+  .grid-12{
+      grid-row-start: 2;
+      grid-column-start: 2;
+      background-color: green;
+      color:white;
+  }
+  .grid-10{
+      grid-column-start: 2;
+      grid-row-end: 7;
+  }
+  h1{
+      text-align: center;
+      color: black;
   }
